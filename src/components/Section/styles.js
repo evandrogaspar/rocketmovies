@@ -6,8 +6,6 @@ export const Container = styled.section`
   padding: 3.2rem;
   border-radius: 1.6rem;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_SECTION};
-
   > h2 {
     font-size: 2.4rem;
     font-weight: 700;

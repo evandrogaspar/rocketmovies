@@ -3,11 +3,11 @@ import { Container, Brand, Profile } from "./styles"
 import { Input } from "../Input"
 
 
-export function Header(){
+export function Header({title}){
   return (
     <Container>
       <Brand>
-      <h1>RocketMovies</h1>
+      <h1>{title}</h1>
       </Brand>
 
       <Input placeholder="Pesquise pelo título" />

@@ -22,10 +22,16 @@ export const Content = styled.div`
 
   padding: 6.5rem;
 
+  overflow-y: auto;
+
   > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  > Section {
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_SECTION};
   }
 
   > Section p{
@@ -36,5 +42,18 @@ export const Content = styled.div`
     margin: 1.5rem 0;
 
     color: ${({ theme }) => theme.COLORS.GRAY_100};
+  }
+
+  > Section .stars{
+   display: flex;
+   align-items: center;
+   gap: .6rem;
+
+   margin-top: .8rem;
+    
+  }
+
+  > Section .stars svg {
+    color: ${({ theme }) => theme.COLORS.PINK_100};
   }
 `
