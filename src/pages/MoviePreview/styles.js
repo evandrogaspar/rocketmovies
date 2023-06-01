@@ -24,6 +24,23 @@ grid-area: content;
 
   overflow-y: auto;
 
+  ::-webkit-scrollbar {
+    width: .6rem;
+
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    
+    border-radius: .8rem;
+    
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color:  ${({ theme }) => theme.COLORS.BACKGROUND_800};
+
+  }
+
   > Button {
     display: flex;
     align-items: center;
