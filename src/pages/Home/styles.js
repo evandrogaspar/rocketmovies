@@ -56,6 +56,7 @@ export const Content = styled.div`
 
   > Section {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_SECTION};
+    padding: 3.2rem;
   }
 
   > Section p{
