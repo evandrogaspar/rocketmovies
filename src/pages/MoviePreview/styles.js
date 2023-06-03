@@ -40,6 +40,17 @@ grid-area: content;
     background-color:  ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
   }
+   a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+    color: ${({ theme }) => theme.COLORS.PINK_100};
+
+    svg {
+      font-size: 2rem;
+    }
+   }
 
   > Button {
     display: flex;

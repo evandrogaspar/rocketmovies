@@ -1,9 +1,9 @@
 import { FiArrowLeft } from "react-icons/fi"
+import { Link } from "react-router-dom"
 
 import { Container, Form } from "./styles"
 
 import { Header } from "../../components/Header"
-import { ButtonText } from "../../components/ButtonText"
 import { Section } from "../../components/Section"
 import { Input } from "../../components/Input"
 import { MovieItem } from "../../components/MovieItem"
@@ -18,9 +18,12 @@ export function CreateMovie(){
     <main>
      <Form>
         <header>
-          <ButtonText title="Voltar">
-            <FiArrowLeft />
-          </ButtonText>
+        
+            <Link to="/">
+              <FiArrowLeft />
+              Voltar
+            </Link>
+          
 
           <h2>Novo filme</h2>
         </header>

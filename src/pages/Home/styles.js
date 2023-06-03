@@ -48,8 +48,8 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
 
-  
-    Button {
+
+    a {
       width: 25%;
     }
   }

@@ -14,8 +14,8 @@ export default {
     WHITE: "#FFF",
     WHITE_TEXT: "#F4EDE8",
     WHITE_TITLE: "#F4EDE8",
+    WHITE_P: "#CAC4CF",
 
-    PINK:"#FF859B",
     PINK_100:"#FF859B",
   }
 }

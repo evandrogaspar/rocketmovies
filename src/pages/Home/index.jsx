@@ -1,4 +1,7 @@
 import { FiPlus, FiStar } from "react-icons/fi"
+
+import { Link } from "react-router-dom"
+
 import { Container, Content } from "./styles"
 
 import { Header } from "../../components/Header"
@@ -16,9 +19,11 @@ export function Home(){
         <Content>
           <div>
             <h1>Meus filmes</h1>
-            <Button title="Adicionar filme">
-             <FiPlus />
+           
+            <Button title="Adicionar filme" to="/createmovie">
+              <FiPlus />
             </Button>
+         
           </div>
 
             <Section title="Interestellar">

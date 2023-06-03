@@ -62,11 +62,16 @@ export const Form = styled.form`
 
  margin-bottom:  3.6rem;
 
-  button {
-   font-size: 2rem;
+ a{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
 
-   display: flex;
-   align-items: center;
+    color: ${({ theme }) => theme.COLORS.PINK_100};
+
+    svg {
+      font-size: 2rem;
+    }
   }
 
   h2{
@@ -94,7 +99,7 @@ export const Form = styled.form`
   align-items: center;
   gap: 4rem;
 
-  > button:nth-child(1){
+  > a:nth-child(1){
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
     color: ${({ theme }) => theme.COLORS.PINK_100};

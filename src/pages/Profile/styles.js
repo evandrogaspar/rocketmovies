@@ -14,9 +14,14 @@ width: 100%;
 
   padding: 0 12.4rem;
 
-  svg {
+  a {
+    color: ${({ theme }) => theme.COLORS.PINK_100};
+
+    svg {
     font-size: 2.4rem;
   }
+  }
+ 
 }
 `
 export const Form  = styled.form`
@@ -45,7 +50,8 @@ height: 18.6rem;
 
 > img {
   width: 18.6rem;
-  height: 18.6rem;border-radius: 50%;
+  height: 18.6rem;
+  border-radius: 50%;
 }
 
 > label {

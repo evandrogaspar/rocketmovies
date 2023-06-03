@@ -1,11 +1,12 @@
 import { FiStar, FiClock, FiArrowLeft } from "react-icons/fi"
 
+import { Link } from "react-router-dom"
+
 import { Container, Content } from "./styles"
 
 import { Header } from "../../components/Header"
 import { Section } from "../../components/Section"
 import { Tag } from "../../components/Tag"
-import { ButtonText } from "../../components/ButtonText"
 
  export function MoviePreview(){
   return(
@@ -13,9 +14,10 @@ import { ButtonText } from "../../components/ButtonText"
       <Header />
 
     <Content>
-      <ButtonText title="Voltar">
-      <FiArrowLeft />
-      </ButtonText>
+      <Link to="/">
+        <FiArrowLeft />
+        Voltar
+      </Link>
       
     <Section>
      <div className="title">
