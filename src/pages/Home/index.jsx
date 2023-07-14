@@ -17,7 +17,7 @@ export function Home(){
         <Header title="RocketMovies"/>
 
         <Content>
-          <div>
+          <div className="titleAndButton">
             <h1>Meus filmes</h1>
            
             <Button title="Adicionar filme" to="/createmovie">

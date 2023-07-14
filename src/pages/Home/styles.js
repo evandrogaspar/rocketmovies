@@ -43,13 +43,13 @@ export const Content = styled.div`
   }
 
 
-  > div {
+   .titleAndButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 
-    a {
+    button {
       width: 25%;
     }
   }

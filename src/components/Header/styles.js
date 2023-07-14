@@ -18,6 +18,12 @@ justify-content: space-between;
 gap: 6.4rem;
 
 padding: 2.4rem 12.3rem;
+
+.profile-wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 `
 
 export const Brand = styled.div`
@@ -27,15 +33,10 @@ color: ${({ theme }) => theme.COLORS.PINK};;
 `
 
 export const Profile = styled(Link)`
-display: flex;
-align-items: center;
-
-
-> div {
-
   display: flex;
-  flex-direction: column;
- 
+  gap: 1rem;
+  align-items: center;
+
   margin-right:.9rem;
 
   text-align: right;
@@ -47,20 +48,26 @@ align-items: center;
   color: ${({ theme }) => theme.COLORS.WHITE_TEXT};
   }
 
-  span a {
-  font-size: 1.4rem;
-  font-weight: 400;
-
-  color: ${({ theme }) => theme.COLORS.GRAY_800};
-  }
-}
-
-
 > img {
   width: 6.4rem;
   height: 6.4rem;
 
   border-radius: 50%;
 }
+`
+export const Logout = styled.button`
+position: absolute;
+width: 4rem;
 
+top: 5rem;
+left: 7rem;
+
+border: none;
+background: none;
+
+font-size: 1.4rem;
+font-weight: 400;
+
+color: ${({ theme }) => theme.COLORS.GRAY_800};
+  
 `
