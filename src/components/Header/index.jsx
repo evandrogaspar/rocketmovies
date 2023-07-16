@@ -1,18 +1,25 @@
 import { useNavigate } from "react-router-dom"
+
+import { useAuth } from "../../hooks/auth"
+import { api } from "../../services/api"
+
+import avatarPlaceholder from "../../assets/avatar_placeholder.svg"
+
 import { Container, Brand, Profile, Logout } from "./styles"
 import { Input } from "../Input"
 
-import { useAuth } from "../../hooks/auth"
 
 
 export function Header({title}){
-  const { signOut } =  useAuth()
+  const { signOut, user } =  useAuth()
   const navigate = useNavigate()
 
   function handleSignOut(){
     navigate("/")
     signOut()
   }
+
+  const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
 
   return (
     <Container>
@@ -25,9 +32,12 @@ export function Header({title}){
   <div className="profile-wrapper">
     
         <Profile to="/profile">
-            <strong>Evandro Gaspar</strong>
+            <strong>{user.name}</strong>
       
-          <img src="https://github.com/evandrogaspar.png" alt="Imagem do usuário" />
+          <img 
+          src={avatarURL} 
+          alt={user.name} 
+          />
         </Profile>
         <Logout onClick={handleSignOut}>
           Sair

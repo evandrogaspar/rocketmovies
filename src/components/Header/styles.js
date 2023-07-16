@@ -20,9 +20,8 @@ gap: 6.4rem;
 padding: 2.4rem 12.3rem;
 
 .profile-wrapper{
-  display: flex;
-  flex-direction: column;
-  position: relative;
+display: flex;
+flex-direction: column;
 }
 `
 
@@ -34,13 +33,10 @@ color: ${({ theme }) => theme.COLORS.PINK};;
 
 export const Profile = styled(Link)`
   display: flex;
-  gap: 1rem;
   align-items: center;
 
-  margin-right:.9rem;
+  gap: 1rem;
 
-  text-align: right;
-  
   strong {
   font-size: 1.4rem;
   font-weight: 700;
@@ -56,11 +52,10 @@ export const Profile = styled(Link)`
 }
 `
 export const Logout = styled.button`
-position: absolute;
-width: 4rem;
+position: relative;
 
-top: 5rem;
-left: 7rem;
+top: -1rem;
+left: -3.5rem;
 
 border: none;
 background: none;
