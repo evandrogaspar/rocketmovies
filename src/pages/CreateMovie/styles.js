@@ -19,13 +19,13 @@ grid-template-areas:
   }
 
   ::-webkit-scrollbar-thumb{
-    background-color: ${({ theme }) => theme.COLORS.PINK};
+    background-color: ${({ theme }) => theme.COLORS.PINK_100};
     
-    border-radius: .8rem;
+    border-radius: 1rem;
   }
 
   ::-webkit-scrollbar-track{
-    background-color:  ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 }
 
@@ -62,10 +62,12 @@ export const Form = styled.form`
 
  margin-bottom:  3.6rem;
 
- a{
+ > button {
     display: flex;
-    align-items: center;
     gap: .2rem;
+
+    border: none;
+    background: none;
 
     color: ${({ theme }) => theme.COLORS.PINK_100};
 
@@ -86,7 +88,13 @@ export const Form = styled.form`
   gap: 4rem;
 
   margin-bottom: 4rem;
- }
+
+  > input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button{
+    visibility: hidden;
+  }
+}
+
  
  > section h2 {
   font-size: 2rem;
@@ -94,16 +102,10 @@ export const Form = styled.form`
   color: ${({ theme }) => theme.COLORS.GRAY_100};
  }
 
- > .buttons {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-
-  > a:nth-child(1){
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
-    color: ${({ theme }) => theme.COLORS.PINK_100};
-  }
+ 
+ > button {
+  margin: 0 auto;
+  width: 25%;
  }
 
  

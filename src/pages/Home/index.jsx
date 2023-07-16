@@ -1,6 +1,6 @@
 import { FiPlus, FiStar } from "react-icons/fi"
 
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 import { Container, Content } from "./styles"
 
@@ -12,6 +12,13 @@ import { Tag } from "../../components/Tag"
 
 
 export function Home(){
+
+  const navigate = useNavigate()
+
+  function handleAddMovie(){
+    navigate("/createmovie")
+  }
+
   return(
       <Container>
         <Header title="RocketMovies"/>
@@ -20,7 +27,7 @@ export function Home(){
           <div className="titleAndButton">
             <h1>Meus filmes</h1>
            
-            <Button title="Adicionar filme" to="/createmovie">
+            <Button title="Adicionar filme" onClick={handleAddMovie}>
               <FiPlus />
             </Button>
          
