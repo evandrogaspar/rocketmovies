@@ -4,29 +4,20 @@ export const Container = styled.div`
 width: 100%;
 height: 100vh;
 
-display: grid;
-grid-template-rows: 10.5rem auto;
-grid-template-areas:
-"header"
-"content";
+overflow-y: auto;
 
-> main {
-  grid-area: content;
-  overflow-y: auto;
+::-webkit-scrollbar {
+  width: .6rem;
+}
 
-  ::-webkit-scrollbar {
-    width: .6rem;
-  }
+::-webkit-scrollbar-thumb{
+  background-color: ${({ theme }) => theme.COLORS.PINK_100};
+  
+  border-radius: 1rem;
+}
 
-  ::-webkit-scrollbar-thumb{
-    background-color: ${({ theme }) => theme.COLORS.PINK_100};
-    
-    border-radius: 1rem;
-  }
-
-  ::-webkit-scrollbar-track{
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-  }
+::-webkit-scrollbar-track{
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 }
 
 .tags {

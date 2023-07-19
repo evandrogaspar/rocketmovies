@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Link } from "react-router-dom"
 
 
-export const Container = styled.header`
+export const Header = styled.header`
 grid-area: header;
 
 width: 100%;

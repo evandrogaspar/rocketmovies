@@ -30,7 +30,7 @@ grid-area: content;
   }
 
   ::-webkit-scrollbar-thumb{
-    background-color: ${({ theme }) => theme.COLORS.PINK};
+    background-color: ${({ theme }) => theme.COLORS.PINK_100};
     
     border-radius: .8rem;
     
@@ -75,50 +75,6 @@ grid-area: content;
     font-weight: 500;
   }
 
-  > Section .stars {
-    
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-
-   font-size: 2rem;
-
-   margin-top: .8rem;
-   color: ${({ theme }) => theme.COLORS.PINK_100};
-  }
-
-  > Section .user-details {
-    margin-top: 2.4rem;
-    margin-bottom: 4rem;
-
-    display: flex;
-    gap: .8rem;
-
-  }
-
-  > Section .profile {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: .6rem;
-
-     img {
-      width: 1.6rem;
-      height: 1.6rem;
-      border-radius:50%;
-     }
-  }
-
-  > Section .date {
-    display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: .6rem;
-
-     svg {
-      color: ${({ theme }) => theme.COLORS.PINK_100};
-     }
-  }
 
   > Section p{
     font-size: 1.6rem;

@@ -3,7 +3,6 @@ import {  useNavigate } from "react-router-dom"
 
 import { Container, Form } from "./styles"
 
-import { Header } from "../../components/Header"
 import { Section } from "../../components/Section"
 import { Input } from "../../components/Input"
 import { MovieItem } from "../../components/MovieItem"
@@ -66,7 +65,7 @@ export function CreateMovie(){
 
   return (
     <Container>
-     <Header title="RocketMovies"/>
+     
 
     <main>
      <Form>

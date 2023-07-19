@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+/*import { useNavigate } from "react-router-dom"
 
 import { useAuth } from "../../hooks/auth"
 import { api } from "../../services/api"
@@ -14,6 +14,7 @@ export function Header({title}){
   const { signOut, user } =  useAuth()
   const navigate = useNavigate()
 
+
   function handleSignOut(){
     navigate("/")
     signOut()
@@ -21,13 +22,16 @@ export function Header({title}){
 
   const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
 
+
   return (
     <Container>
       <Brand>
       <h1>{title}</h1>
       </Brand>
 
-      <Input placeholder="Pesquise pelo título" />
+      <Input 
+      placeholder="Pesquise pelo título"
+      />
 
   <div className="profile-wrapper">
     
@@ -51,4 +55,4 @@ export function Header({title}){
 
     </Container>
   )
-}
+}*/
