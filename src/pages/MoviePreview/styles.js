@@ -4,11 +4,24 @@ export const Container = styled.div`
 width: 100%;
 height: 100vh;
 
-display: grid;
-grid-template-rows: 11.6rem auto;
-grid-template-areas: 
-"header"
-"content";
+overflow-y: auto;
+
+::-webkit-scrollbar {
+    width: .6rem;
+
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: ${({ theme }) => theme.COLORS.PINK_100};
+    
+    border-radius: .8rem;
+    
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color:${({ theme }) => theme.COLORS.BACKGROUND_800};
+
+  }
 `
 
 export const Content = styled.div`
@@ -22,65 +35,58 @@ grid-area: content;
 
   padding: 6.5rem;
 
-  overflow-y: auto;
-
-  ::-webkit-scrollbar {
-    width: .6rem;
-
-  }
-
-  ::-webkit-scrollbar-thumb{
-    background-color: ${({ theme }) => theme.COLORS.PINK_100};
-    
-    border-radius: .8rem;
-    
-  }
-
-  ::-webkit-scrollbar-track{
-    background-color:  ${({ theme }) => theme.COLORS.BACKGROUND_800};
-
-  }
-   a{
+  > .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    button {
     display: flex;
     align-items: center;
     gap: .5rem;
+
+    border: none;
+    background: none;
     
     color: ${({ theme }) => theme.COLORS.PINK_100};
 
     svg {
       font-size: 2rem;
     }
+    }
+  }
+
+   > h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 6rem;
+    margin-bottom: .20rem;
+
+    color: ${({ theme }) => theme.COLORS.PINK_100};
+
    }
 
-  > Button {
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-
-    margin-left: 3rem;
+  > span {
+    color: ${({ theme }) => theme.COLORS.PINK_100};
+    font-size: 1.6rem;
   }
 
-  > Section {
-    color: ${({ theme }) => theme.COLORS.WHITE_TEXT};
-
-  }
-
-  > Section .title {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  > Section h2{
-    font-size: 3.6rem;
-    font-weight: 500;
-  }
-
-
-  > Section p{
+   p{
+    margin: 2.5rem auto;
     font-size: 1.6rem;
     line-height: 1.9rem;
     text-align: justify;
+    color: ${({ theme }) => theme.COLORS.WHITE_TEXT};
+   
+   }
 
-    margin-top: 6rem;
+  > Section h2{
+  margin-bottom: 1.6rem;
+
   }
+
+ 
+
+
+
 ` 
