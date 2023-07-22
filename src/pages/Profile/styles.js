@@ -14,18 +14,6 @@ width: 100%;
 
   padding: 0 12.4rem;
 
-  button {
-    color: ${({ theme }) => theme.COLORS.PINK_100};
-
-    border: none;
-    background: none;
-
-
-    svg {
-    font-size: 2.4rem;
-  }
-  }
- 
 }
 `
 export const Form  = styled.form`

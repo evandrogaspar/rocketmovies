@@ -1,7 +1,7 @@
 import { FiArrowLeft } from "react-icons/fi"
 
 import { useState, useEffect } from "react"
-import { Link, useParams, useNavigate} from "react-router-dom"
+import { useParams, useNavigate} from "react-router-dom"
 
 import { api } from "../../services/api"
 
@@ -9,6 +9,7 @@ import { Container, Content } from "./styles"
 
 import { Section } from "../../components/Section"
 import { Tag } from "../../components/Tag"
+import { ButtonText } from "../../components/ButtonText"
 
 
  export function MoviePreview(){
@@ -34,7 +35,6 @@ import { Tag } from "../../components/Tag"
     async function fetchNote(){
       const response = await api.get(`/movienotes/${params.id}`)
       setData(response.data)
-      console.log(response.data)
     }
 
     fetchNote()
@@ -46,12 +46,13 @@ import { Tag } from "../../components/Tag"
    data &&
     <Content>
       <div className="buttons">
-        <button onClick={handleBack}>
-          <FiArrowLeft />
+        <ButtonText onClick={handleBack}>
+        <FiArrowLeft />
           Voltar
-        </button>
-
-       <button onClick={handleRemove}>Excluir</button>
+        </ButtonText>
+    
+        <ButtonText title="Excluir" onClick={handleRemove}/>
+      
       </div>
       
     

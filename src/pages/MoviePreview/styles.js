@@ -39,21 +39,7 @@ grid-area: content;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-    button {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-
-    border: none;
-    background: none;
-    
-    color: ${({ theme }) => theme.COLORS.PINK_100};
-
-    svg {
-      font-size: 2rem;
-    }
-    }
+ 
   }
 
    > h1 {
@@ -72,7 +58,7 @@ grid-area: content;
   }
 
    p{
-    margin: 2.5rem auto;
+    margin: 2.5rem 0;
     font-size: 1.6rem;
     line-height: 1.9rem;
     text-align: justify;

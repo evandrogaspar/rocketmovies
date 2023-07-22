@@ -53,20 +53,7 @@ export const Form = styled.form`
 
  margin-bottom:  3.6rem;
 
- > button {
-    display: flex;
-    gap: .2rem;
-
-    border: none;
-    background: none;
-
-    color: ${({ theme }) => theme.COLORS.PINK_100};
-
-    svg {
-      font-size: 2rem;
-    }
-  }
-
+ 
   h2{
     font-size: 3.6rem;
     font-weight: 500;

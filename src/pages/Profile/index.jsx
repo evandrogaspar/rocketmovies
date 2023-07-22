@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom"
 import { Container, Form, Avatar } from "./styles"
 
 import { Button } from "../../components/Button"
+import { ButtonText } from "../../components/ButtonText"
 import { Input  } from "../../components/Input"
 import { useState } from "react"
 
@@ -62,11 +63,10 @@ export function Profile(){
   return (
     <Container>
         <header>
-         
-            <button type="button" onClick={handleBack}>
-              <FiArrowLeft />
-            </button >
-         
+         <ButtonText onClick={handleBack}>
+         <FiArrowLeft />
+         </ButtonText>
+      
         </header>
 
         <Form>

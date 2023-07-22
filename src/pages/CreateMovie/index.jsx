@@ -7,6 +7,7 @@ import { Section } from "../../components/Section"
 import { Input } from "../../components/Input"
 import { MovieItem } from "../../components/MovieItem"
 import { Button } from "../../components/Button"
+import { ButtonText } from "../../components/ButtonText"
 import { Textarea } from "../../components/Textarea"
 import { useState } from "react"
 import { api } from "../../services/api"
@@ -70,11 +71,10 @@ export function CreateMovie(){
     <main>
      <Form>
         <header>
-        
-            <button onClick={handleBack}>
-              <FiArrowLeft />
+        <ButtonText onClick={handleBack}>
+        <FiArrowLeft />
               Voltar
-            </button>
+        </ButtonText>
           
 
           <h2>Novo filme</h2>
